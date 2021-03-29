@@ -1,0 +1,24 @@
+include header.pug 
+html 
+    head 
+        title Add User 
+    body 
+        form(action="/user", method="post")
+            div
+                label(for="name") Name :
+                    input(name = "name")  
+            br
+            div 
+                label(for="address") Address :
+                    input(name="address")
+            br
+            div 
+                label(for="contact") Contact No :
+                    input(name="contact")
+            br
+            div 
+                label(for="email") Email :
+                    input(name="email")
+            br 
+            button(type="submit") Add User
+include footer.pug
